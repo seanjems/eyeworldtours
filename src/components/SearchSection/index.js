@@ -94,15 +94,6 @@ const SearchSection = (props) => {
                               />
                               Children
                             </li>
-                            <li>
-                              <input
-                                disabled
-                                type="text"
-                                id="rooms"
-                                value={room}
-                              />{" "}
-                              Room
-                            </li>
                           </ul>
                           <i
                             className={`ti-angle-down ${
@@ -165,7 +156,7 @@ const SearchSection = (props) => {
                               </button>
                             </div>
                           </div>
-                          <div className="tourist-item">
+                          {/* <div className="tourist-item">
                             <span>Rooms</span>
                             <div className="tourist-item-group">
                               <button
@@ -189,7 +180,7 @@ const SearchSection = (props) => {
                                 +
                               </button>
                             </div>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>
@@ -198,7 +189,7 @@ const SearchSection = (props) => {
                     <Link
                       onClick={ClickHandler}
                       className="theme-btn d-flex justify-content-center"
-                      to="/search-result"
+                      to="/destination"
                     >
                       Explore
                     </Link>

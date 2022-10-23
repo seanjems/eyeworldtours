@@ -25,7 +25,7 @@ const About2 = (props) => {
                 </div>
                 <div className="wpo-about-content-inner">
                   <p>
-                    If you are brave enough to travel far across the desert,
+                    If you are brave enough to travel far across the savannah,
                     love the outdoors, are strong and tough, then this trip is
                     for you. On this tour you travel through the impenetrable
                     forests of the famous Uganda Safari Park Kidepo, Murchison

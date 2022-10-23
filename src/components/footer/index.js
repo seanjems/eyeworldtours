@@ -64,7 +64,7 @@ const Footer = (props) => {
                     </Link>
                   </li>
                   <li>
-                    <Link onClick={ClickHandler} to={`/exclusive`}>
+                    <Link onClick={ClickHandler} to={`/about`}>
                       Exclusive offer
                     </Link>
                   </li>
