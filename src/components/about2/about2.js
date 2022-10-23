@@ -66,7 +66,11 @@ const About2 = (props) => {
                       <h3>$5210</h3>
                     </div>
                   </div>
-                  <Link className="theme-btn" onClick={ClickHandler} to="/room">
+                  <Link
+                    className="theme-btn"
+                    onClick={ClickHandler}
+                    to="/destination-single/1"
+                  >
                     Book Now
                   </Link>
                 </div>

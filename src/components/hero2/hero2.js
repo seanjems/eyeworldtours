@@ -20,11 +20,14 @@ const Hero2 = (props) => {
                       <span>Seraphim</span>Eye World Tours
                     </h2>
                     <p>
-                      Seraphim Eyeworld Tours is one of the top tourism
-                      businesses in Uganda. Its headquarters are in Kampala, and
-                      it also has an office in the Rukungiri-Bwambara
-                      Sub-county, with the aim of providing expert services to
-                      travelers and explorers from all over the world.
+                      With years of expertise planning trips all throughout
+                      Uganda, we are your go-to tour operator and provide a
+                      dedicated, specialized service. We have extensive
+                      knowledge about Uganda's attractions and are passionate
+                      about the country. Our headquarters are in Kampala,
+                      Uganda's capital. Our creative personalized trips and
+                      professionally led packaged tours & safaris reflect our
+                      in-depth knowledge of the industry.
                     </p>
                     <span>Explorer Uganda while cherishing every moment</span>
                   </div>
@@ -33,7 +36,7 @@ const Hero2 = (props) => {
                     <Link
                       className="theme-btn"
                       onClick={ClickHandler}
-                      to="/room"
+                      to="/contact"
                     >
                       {" "}
                       Book Now

@@ -27,6 +27,7 @@ import ForgotPassword from "../ForgotPassword";
 import PricingPage from "../PricingPage/PricingPage";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import ContactPage from "../ContactPage/ContactPage";
+import PlacesSinglePage from "../DestinationSinglePage/PlacesSinglePage";
 
 const AllRoute = () => {
   return (
@@ -38,8 +39,8 @@ const AllRoute = () => {
           {/*<Route path='home2' element={<Homepage2 />} />
           <Route path='home3' element={<HomePage3 />} /> */}
           <Route path="about" element={<AboutPage />} />
-          <Route path="search-result" element={<SearchResults />} />
-          <Route path="room-single/:id" element={<RoomSinglePage />} />
+          {/* <Route path="search-result" element={<SearchResults />} /> */}
+          {/* <Route path="room-single/:id" element={<RoomSinglePage />} /> */}
           <Route path="cart" element={<CartPage />} />
           <Route path="checkout" element={<CheckoutPage />} />
           <Route path="order_received" element={<OrderRecived />} />
@@ -49,10 +50,11 @@ const AllRoute = () => {
             path="destination-single/:id"
             element={<DestinationSinglePage />}
           />
+          <Route path="places/:id" element={<PlacesSinglePage />} />
           <Route path="service" element={<ServicePage />} />
           <Route path="service-s2" element={<ServicePageS2 />} />
           <Route path="service-single/:id" element={<ServiceSinglePage />} />
-          <Route path="pricing" element={<PricingPage />} />
+          <Route path="places" element={<PricingPage />} />
           <Route path="404" element={<ErrorPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="blog-single/:id" element={<BlogDetails />} />

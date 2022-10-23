@@ -7,8 +7,8 @@ import ins3 from "../../images/instragram/3.jpg";
 import ins4 from "../../images/instragram/4.jpg";
 import ins5 from "../../images/instragram/5.jpg";
 import ins6 from "../../images/instragram/6.jpg";
-
-const DestinationSidebar = (props) => {
+import PricingData from "../../components/PricingSection/PricingData";
+const PlacesSidebar = (props) => {
   const SubmitHandler = (e) => {
     e.preventDefault();
   };
@@ -21,15 +21,12 @@ const DestinationSidebar = (props) => {
     <div className="col-lg-4 col-md-8">
       <div className="wpo-single-sidebar">
         <div className="wpo-service-widget widget">
-          <h2>All Destination</h2>
+          <h2>All Places</h2>
           <ul>
-            {Destinations.map((destination, Sitem) => (
+            {PricingData.map((destination, Sitem) => (
               <li key={Sitem}>
-                <Link
-                  onClick={ClickHandler}
-                  to={`/destination-single/${destination.id}`}
-                >
-                  {destination.title}
+                <Link onClick={ClickHandler} to={`/places/${destination.id}`}>
+                  {destination.pakage}
                 </Link>
               </li>
             ))}
@@ -74,4 +71,4 @@ const DestinationSidebar = (props) => {
   );
 };
 
-export default DestinationSidebar;
+export default PlacesSidebar;

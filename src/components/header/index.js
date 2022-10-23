@@ -66,42 +66,16 @@ const Header = (props) => {
                       </Link>
                     </li>
                     <li className="menu-item-has-children">
-                      <Link onClick={ClickHandler} to="/">
-                        Room
+                      <Link onClick={ClickHandler} to="/places">
+                        Sites
                       </Link>
-                      <ul className="sub-menu">
-                        <li>
-                          <Link onClick={ClickHandler} to="/room">
-                            Room
-                          </Link>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} to="/room-single/1">
-                            Room single
-                          </Link>
-                        </li>
-                      </ul>
                     </li>
                     <li className="menu-item-has-children">
-                      <Link onClick={ClickHandler} to="/">
-                        Destinitions
+                      <Link onClick={ClickHandler} to="/destination">
+                        Travel Packages
                       </Link>
-                      <ul className="sub-menu">
-                        <li>
-                          <Link onClick={ClickHandler} to="/destination">
-                            Destinitions
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            onClick={ClickHandler}
-                            to="/destination-single/1"
-                          >
-                            Destinition single
-                          </Link>
-                        </li>
-                      </ul>
                     </li>
+
                     {/* <li className="menu-item-has-children">
                       <Link onClick={ClickHandler} to="/blog">
                         Blog
@@ -152,63 +126,7 @@ const Header = (props) => {
                         </li>
                       </ul>
                     </li> */}
-                    <li className="menu-item-has-children">
-                      <Link onClick={ClickHandler} to="/">
-                        Pages
-                      </Link>
-                      <ul className="sub-menu">
-                        <li>
-                          <Link onClick={ClickHandler} to="/service">
-                            Service
-                          </Link>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} to="/service-s2">
-                            Service Style2
-                          </Link>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} to="/service-single/1">
-                            Service Single
-                          </Link>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} to="/cart">
-                            Cart
-                          </Link>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} to="/checkout">
-                            Checkout
-                          </Link>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} to="/pricing">
-                            Pricing
-                          </Link>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} to="/search-result">
-                            Search Result
-                          </Link>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} to="/404">
-                            404
-                          </Link>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} to="/login">
-                            Login
-                          </Link>
-                        </li>
-                        <li>
-                          <Link onClick={ClickHandler} to="/register">
-                            Register
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
+
                     <li>
                       <Link onClick={ClickHandler} to="/contact">
                         Contact
@@ -219,7 +137,7 @@ const Header = (props) => {
               </div>
               <div className="col-lg-1 col-md-2 col-2">
                 <div className="header-right">
-                  <div className="header-search-form-wrapper">
+                  {/* <div className="header-search-form-wrapper">
                     <div className="cart-search-contact">
                       <button
                         onClick={() => setMenuState(!menuActive)}
@@ -250,8 +168,8 @@ const Header = (props) => {
                         </form>
                       </div>
                     </div>
-                  </div>
-                  <div className="mini-cart">
+                  </div> */}
+                  {/* <div className="mini-cart">
                     <button
                       className="cart-toggle-btn"
                       onClick={() => setcartState(!cartActive)}
@@ -325,7 +243,7 @@ const Header = (props) => {
                         <img src={shape} alt="icon" />
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

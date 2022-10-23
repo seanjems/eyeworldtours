@@ -56,7 +56,7 @@ const Destinations = [
   },
   {
     id: "2",
-    title: "7 DAYS WONDERS OF UGANDA EXPLORATION",
+    title: "Wonders of Uganda -A 7 Day exploration",
     subTitle:
       "Kidepo, Murchison Falls, Queen Elizabeth, Kibale, Bwindi, Rwanda",
     descriptionPar1: `
@@ -89,7 +89,7 @@ const Destinations = [
 <p>With this safari, you get a well planned opportunity to explore, unwind, meet people, learn, and basically create an experience to remember for the rest of your life!</p>
    `,
     descriptionPar2: "",
-    imgTop: dimg8,
+    imgTop: dimg2,
     dimg1: dimg9,
     dimg2: dimg10,
     placesToVist: [

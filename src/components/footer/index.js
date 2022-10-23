@@ -53,16 +53,21 @@ const Footer = (props) => {
                   <h3>Services</h3>
                 </div>
                 <ul>
-                  {Services.slice(0, 5).map((service, sitem) => (
-                    <li key={sitem}>
-                      <Link
-                        onClick={ClickHandler}
-                        to={`/service-single/${service.id}`}
-                      >
-                        {service.title}
-                      </Link>
-                    </li>
-                  ))}
+                  <li>
+                    <Link onClick={ClickHandler} to={`/destination`}>
+                      Tour Packages
+                    </Link>
+                  </li>
+                  <li>
+                    <Link onClick={ClickHandler} to={`/places`}>
+                      Places to visit
+                    </Link>
+                  </li>
+                  <li>
+                    <Link onClick={ClickHandler} to={`/exclusive`}>
+                      Exclusive offer
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -73,28 +78,18 @@ const Footer = (props) => {
                 </div>
                 <ul>
                   <li>
-                    <Link onClick={ClickHandler} to="/about">
-                      About Us
+                    <Link onClick={ClickHandler} to="/contact">
+                      Contact Us
                     </Link>
                   </li>
                   <li>
-                    <Link onClick={ClickHandler} to="/destination">
-                      Populer Destinition
+                    <Link onClick={ClickHandler} to="/">
+                      Home
                     </Link>
                   </li>
                   <li>
-                    <Link onClick={ClickHandler} to="/room">
-                      Awesome Rooms
-                    </Link>
-                  </li>
-                  <li>
-                    <Link onClick={ClickHandler} to="/service">
-                      Our Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link onClick={ClickHandler} to="/pricing">
-                      Pricing Plan
+                    <Link onClick={ClickHandler} to="/contact">
+                      Book Safari
                     </Link>
                   </li>
                 </ul>
@@ -109,15 +104,14 @@ const Footer = (props) => {
                 <div className="contact-ft">
                   <ul>
                     <li>
-                      <i className="fi flaticon-placeholder"></i>7 Green Lake
-                      Street Crawfordsville, IN 47933
+                      <i className="fi flaticon-placeholder"></i> P.O BOX
+                      25956-KAMPALA <br /> Ambassador House, 2nd Floor Suit #07
                     </li>
                     <li>
-                      <i className="fi flaticon-phone-call"></i>+1 800 123 456
-                      789
+                      <i className="fi flaticon-phone-call"></i>+256 750 070 309
                     </li>
                     <li>
-                      <i className="fi flaticon-send"></i>parador@gmail.com
+                      <i className="fi flaticon-send"></i>info@eyeworldtours.com
                     </li>
                   </ul>
                 </div>
@@ -132,9 +126,9 @@ const Footer = (props) => {
             <div className="col col-xs-12">
               <p className="copyright">
                 {" "}
-                Copyright &copy; 2022 Parador by{" "}
+                Copyright &copy; {new Date().getFullYear()} by{" "}
                 <Link onClick={ClickHandler} to="/">
-                  wpOceans
+                  Seraphim Eyeworld Tours
                 </Link>
                 . All Rights Reserved.
               </p>
