@@ -10,23 +10,23 @@ const menus = [
     id: 1,
     title: "Home",
     link: "/home",
-    submenu: [
-      {
-        id: 11,
-        title: "Home style 1",
-        link: "/home",
-      },
-      {
-        id: 12,
-        title: "Home style 2",
-        link: "/home2",
-      },
-      {
-        id: 13,
-        title: "Home style 3",
-        link: "/home3",
-      },
-    ],
+    // submenu: [
+    //   {
+    //     id: 11,
+    //     title: "Home style 1",
+    //     link: "/home",
+    //   },
+    //   {
+    //     id: 12,
+    //     title: "Home style 2",
+    //     link: "/home2",
+    //   },
+    //   {
+    //     id: 13,
+    //     title: "Home style 3",
+    //     link: "/home3",
+    //   },
+    // ],
   },
 
   {
@@ -37,137 +37,41 @@ const menus = [
 
   {
     id: 3,
-    title: "Room",
-    link: "/room",
-    submenu: [
-      {
-        id: 31,
-        title: "Room",
-        link: "/room",
-      },
-      {
-        id: 32,
-        title: "Room single",
-        link: "/room-single/1",
-      },
-    ],
+    title: "Sites",
+    link: "/places",
+    // submenu: [
+    //   {
+    //     id: 31,
+    //     title: "Room",
+    //     link: "/room",
+    //   },
+    //   {
+    //     id: 32,
+    //     title: "Room single",
+    //     link: "/room-single/1",
+    //   },
+    // ],
   },
   {
     id: 4,
-    title: "Destination",
+    title: "Travel Packages",
     link: "/destination",
-    submenu: [
-      {
-        id: 41,
-        title: "Destination",
-        link: "/destination",
-      },
-      {
-        id: 42,
-        title: "Destination single",
-        link: "/destination-single/1",
-      },
-    ],
-  },
-
-  {
-    id: 5,
-    title: "Pages",
-    link: "/",
-    submenu: [
-      {
-        id: 51,
-        title: "Service",
-        link: "/service",
-      },
-      {
-        id: 52,
-        title: "Service S2",
-        link: "/service-s2",
-      },
-      {
-        id: 53,
-        title: "Service single",
-        link: "/service-single/1",
-      },
-      {
-        id: 54,
-        title: "Cart",
-        link: "/cart",
-      },
-      {
-        id: 55,
-        title: "Checkout",
-        link: "/checkout",
-      },
-      {
-        id: 56,
-        title: "Places",
-        link: "/places",
-      },
-      {
-        id: 57,
-        title: "Search Result",
-        link: "/search-result",
-      },
-      {
-        id: 58,
-        title: "404 Error",
-        link: "/404",
-      },
-      {
-        id: 59,
-        title: "Login",
-        link: "/login",
-      },
-      {
-        id: 591,
-        title: "Register",
-        link: "/register",
-      },
-    ],
-  },
-
-  {
-    id: 6,
-    title: "Blog",
-    link: "/blog",
-    submenu: [
-      {
-        id: 61,
-        title: "Blog",
-        link: "/blog",
-      },
-      {
-        id: 62,
-        title: "Blog Left sidebar",
-        link: "/blog-left",
-      },
-      {
-        id: 63,
-        title: "Blog full width",
-        link: "/blog-fullwidth",
-      },
-      {
-        id: 64,
-        title: "Blog single",
-        link: "/blog-single/1",
-      },
-      {
-        id: 65,
-        title: "Blog single Left sidebar",
-        link: "/blog-single-left-sidebar/1",
-      },
-      {
-        id: 66,
-        title: "Blog single Left sidebar",
-        link: "/blog-single-fullwidth/1",
-      },
-    ],
+    // submenu: [
+    //   {
+    //     id: 41,
+    //     title: "Destination",
+    //     link: "/destination",
+    //   },
+    //   {
+    //     id: 42,
+    //     title: "Destination single",
+    //     link: "/destination-single/1",
+    //   },
+    // ],
   },
   {
-    id: 7,
-    title: "Contact",
+    id: 4,
+    title: "Contact Us",
     link: "/contact",
   },
 ];

@@ -334,6 +334,7 @@
 		}
 		@media(max-width:991px){
 			width:100%;
+			color:white;
 		}
 
 		&:before{
@@ -361,7 +362,7 @@
 	}
 
 	@include media-query(767px) {
-		height: 500px;
+/* 		height: 500px; */
 	}
 
 
@@ -401,9 +402,16 @@
 			padding-top: 60px;
 		}
 
+		@media(max-width:991px){
+					.hero-text{
+	  color: white;
+		 }
+				}
+		
 		.slide-title{
 			max-width: 550px;
 			margin: 0 auto;
+			
 
 			h2{
 				color: $dark-gray;

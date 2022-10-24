@@ -1881,6 +1881,9 @@ a.ui-button:active, .ui-button:active,
   font-size: 1rem;
   color: #fff;
 }
+.heroText{
+  color: white;
+ }
 
 /* 2.2 navigation */
 .wpo-site-header {
@@ -2777,6 +2780,9 @@ a.ui-button:active, .ui-button:active,
     color: #fff;
     font-weight: 600;
   }
+  .heroText{
+    color: white !important;
+   }
   .wpo-site-header #navbar > ul > li a:hover, .wpo-site-header #navbar > ul > li a.active {
     color: #fff;
   }
@@ -3161,6 +3167,9 @@ a.ui-button:active, .ui-button:active,
   .wpo-header-style-3 .header-right .cart-toggle-btn {
     background-color: rgba(7, 1, 67, 0.05);
   }
+  .heroText{
+    color: white !important;
+   }
 }
 
 .fixed-navbar {
@@ -11716,4 +11725,5 @@ a.ui-button:active, .ui-button:active,
 .error-404-section .error-message p {
   margin-bottom: 1.8em;
 }
+
 /*# sourceMappingURL=style.css.map */

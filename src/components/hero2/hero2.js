@@ -19,7 +19,7 @@ const Hero2 = (props) => {
                     <h2 className="d-flex flex-column">
                       <span>Seraphim</span>Eye World Tours
                     </h2>
-                    <p>
+                    <p className="hero-text">
                       With years of expertise planning trips all throughout
                       Uganda, we are your go-to tour operator and provide a
                       dedicated, specialized service. We have extensive
@@ -29,7 +29,9 @@ const Hero2 = (props) => {
                       professionally led packaged tours & safaris reflect our
                       in-depth knowledge of the industry.
                     </p>
-                    <span>Explorer Uganda while cherishing every moment</span>
+                    <span className="hero-text">
+                      Explorer Uganda while cherishing every moment
+                    </span>
                   </div>
                   <div className="clearfix"></div>
                   <div className="slide-btns mt-2">
