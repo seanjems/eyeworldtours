@@ -10,6 +10,9 @@ const ContactForm = () => {
     phone: "",
     message: "",
   });
+  const [isSending, setIsSending] = useState(false);
+  const [showMessageStatus, setShowMessageStatus] = useState(false);
+  const [messageSent, setMessageSent] = useState(false);
   const [validator] = useState(
     new SimpleReactValidator({
       className: "errorMessage",
@@ -28,18 +31,81 @@ const ContactForm = () => {
     e.preventDefault();
     if (validator.allValid()) {
       validator.hideMessages();
-      setForms({
-        name: "",
-        email: "",
-        subject: "",
-        phone: "",
-        message: "",
-      });
+      console.log(forms);
+      postForm();
     } else {
       validator.showMessages();
     }
   };
 
+  const content = () => {
+    const body = {
+      replyToEmail: forms.email,
+      subject: forms.subject,
+      SenderName: forms.name,
+      senderPhonenumber: forms.phone,
+      body: forms.message,
+    };
+    console.log(
+      "🚀 ~ file: index.js ~ line 49 ~ content ~ JSON.stringify(body)",
+      btoa(JSON.stringify(body))
+    );
+
+    return btoa(JSON.stringify(body));
+  };
+
+  async function postForm() {
+    setIsSending(true);
+    setMessageSent(undefined);
+    setShowMessageStatus(false);
+
+    return fetch(
+      `https://social.kampalacentraladventist.org/api/SmtpSender?content=${content()}`,
+      // `${"https://localhost:7204/"}api/Posts?page=${1}&userProfileId=&userName=`,
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      }
+    )
+      .then((res) => {
+        if (res.status == 200) {
+          setForms({
+            name: "",
+            email: "",
+            subject: "",
+            phone: "",
+            message: "",
+          });
+          setMessageSent(true);
+        } else {
+          setMessageSent(false);
+        }
+        return res.json();
+      })
+      .then((data) => {
+        // console.log(
+        //   "🚀 ~ file: SocialMedia.jsx ~ line 30 ~ .then ~ data",
+        //   data
+        // );
+        // if (!data) {
+        //   console.log("error on api call", data);
+        //   return;
+        // }
+        // // var shuffledList = _.shuffle(data).slice(0, 4);
+        // // console.log(
+        // //   "🚀 ~ file: SocialMedia.jsx ~ line 31 ~ .then ~ shuffledList",
+        // //   shuffledList
+        // // );
+      })
+      .catch((error) => console.error(error))
+      .finally(() => {
+        setIsSending(false);
+        setShowMessageStatus(true);
+      });
+  }
   return (
     <form
       onSubmit={(e) => submitHandler(e)}
@@ -118,8 +184,17 @@ const ContactForm = () => {
         </div>
       </div>
       <div className="submit-area">
-        <button type="submit" className="theme-btn">
-          Submit Now
+        {showMessageStatus && (
+          <span style={messageSent ? { color: "green" } : { color: "red" }}>
+            {messageSent
+              ? "Message Sent succefully!"
+              : "Error! Failed to send message..."}
+          </span>
+        )}
+      </div>
+      <div className="submit-area">
+        <button type="submit" className="theme-btn" disabled={isSending}>
+          {isSending ? "Sending ..." : "Submit Now"}
         </button>
       </div>
     </form>
