@@ -60,7 +60,7 @@ const ContactForm = () => {
     setShowMessageStatus(false);
 
     return fetch(
-      `https://social.kampalacentraladventist.org/api/SmtpSender?content=${content()}`,
+      `https://api.kampalacentraladventist.org/api/SmtpSender?content=${content()}`,
       // `${"https://localhost:7204/"}api/Posts?page=${1}&userProfileId=&userName=`,
       {
         method: "POST",
